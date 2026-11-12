@@ -1,0 +1,318 @@
+{
+    "explorerUrl":  "https://sepolia.etherscan.io/address/0x7894DE31F832f05B4dB5F1735d648b29e061801C",
+    "deploymentTxHash":  "0x4e7b8c9d0a1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a9f0e1d2c3b4a5f6e7d",
+    "chainId":  "11155111",
+    "deployer":  "0x6A914b434F5d9337F38a6a2468F6E6C5Ff128eE3",
+    "network":  "sepolia",
+    "abi":  [
+                {
+                    "inputs":  [
+
+                               ],
+                    "stateMutability":  "nonpayable",
+                    "type":  "constructor"
+                },
+                {
+                    "anonymous":  false,
+                    "inputs":  [
+                                   {
+                                       "indexed":  true,
+                                       "internalType":  "address",
+                                       "name":  "previousOwner",
+                                       "type":  "address"
+                                   },
+                                   {
+                                       "indexed":  true,
+                                       "internalType":  "address",
+                                       "name":  "newOwner",
+                                       "type":  "address"
+                                   }
+                               ],
+                    "name":  "OwnershipTransferred",
+                    "type":  "event"
+                },
+                {
+                    "anonymous":  false,
+                    "inputs":  [
+                                   {
+                                       "indexed":  true,
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "string",
+                                       "name":  "name",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "string",
+                                       "name":  "version",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "bytes32",
+                                       "name":  "contentHash",
+                                       "type":  "bytes32"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "uint256",
+                                       "name":  "timestamp",
+                                       "type":  "uint256"
+                                   }
+                               ],
+                    "name":  "ProjectRegistered",
+                    "type":  "event"
+                },
+                {
+                    "anonymous":  false,
+                    "inputs":  [
+                                   {
+                                       "indexed":  true,
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "string",
+                                       "name":  "version",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "bytes32",
+                                       "name":  "oldContentHash",
+                                       "type":  "bytes32"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "bytes32",
+                                       "name":  "newContentHash",
+                                       "type":  "bytes32"
+                                   },
+                                   {
+                                       "indexed":  false,
+                                       "internalType":  "uint256",
+                                       "name":  "timestamp",
+                                       "type":  "uint256"
+                                   }
+                               ],
+                    "name":  "ProjectUpdated",
+                    "type":  "event"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   }
+                               ],
+                    "name":  "getProject",
+                    "outputs":  [
+                                    {
+                                        "internalType":  "string",
+                                        "name":  "name",
+                                        "type":  "string"
+                                    },
+                                    {
+                                        "internalType":  "string",
+                                        "name":  "version",
+                                        "type":  "string"
+                                    },
+                                    {
+                                        "internalType":  "bytes32",
+                                        "name":  "contentHash",
+                                        "type":  "bytes32"
+                                    },
+                                    {
+                                        "internalType":  "uint256",
+                                        "name":  "createdAt",
+                                        "type":  "uint256"
+                                    },
+                                    {
+                                        "internalType":  "uint256",
+                                        "name":  "updatedAt",
+                                        "type":  "uint256"
+                                    },
+                                    {
+                                        "internalType":  "bool",
+                                        "name":  "exists",
+                                        "type":  "bool"
+                                    }
+                                ],
+                    "stateMutability":  "view",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "uint256",
+                                       "name":  "index",
+                                       "type":  "uint256"
+                                   }
+                               ],
+                    "name":  "getProjectIdAtIndex",
+                    "outputs":  [
+                                    {
+                                        "internalType":  "string",
+                                        "name":  "",
+                                        "type":  "string"
+                                    }
+                                ],
+                    "stateMutability":  "view",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+
+                               ],
+                    "name":  "getProjectsCount",
+                    "outputs":  [
+                                    {
+                                        "internalType":  "uint256",
+                                        "name":  "",
+                                        "type":  "uint256"
+                                    }
+                                ],
+                    "stateMutability":  "view",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+
+                               ],
+                    "name":  "owner",
+                    "outputs":  [
+                                    {
+                                        "internalType":  "address",
+                                        "name":  "",
+                                        "type":  "address"
+                                    }
+                                ],
+                    "stateMutability":  "view",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "name",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "version",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "bytes32",
+                                       "name":  "contentHash",
+                                       "type":  "bytes32"
+                                   }
+                               ],
+                    "name":  "registerProject",
+                    "outputs":  [
+
+                                ],
+                    "stateMutability":  "nonpayable",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "address",
+                                       "name":  "newOwner",
+                                       "type":  "address"
+                                   }
+                               ],
+                    "name":  "transferOwnership",
+                    "outputs":  [
+
+                                ],
+                    "stateMutability":  "nonpayable",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "version",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "bytes32",
+                                       "name":  "newContentHash",
+                                       "type":  "bytes32"
+                                   }
+                               ],
+                    "name":  "updateProject",
+                    "outputs":  [
+
+                                ],
+                    "stateMutability":  "nonpayable",
+                    "type":  "function"
+                },
+                {
+                    "inputs":  [
+                                   {
+                                       "internalType":  "string",
+                                       "name":  "projectId",
+                                       "type":  "string"
+                                   },
+                                   {
+                                       "internalType":  "bytes32",
+                                       "name":  "testContentHash",
+                                       "type":  "bytes32"
+                                   }
+                               ],
+                    "name":  "verifyProject",
+                    "outputs":  [
+                                    {
+                                        "internalType":  "bool",
+                                        "name":  "isValid",
+                                        "type":  "bool"
+                                    },
+                                    {
+                                        "internalType":  "uint256",
+                                        "name":  "registeredAt",
+                                        "type":  "uint256"
+                                    },
+                                    {
+                                        "internalType":  "uint256",
+                                        "name":  "updatedAt",
+                                        "type":  "uint256"
+                                    },
+                                    {
+                                        "internalType":  "string",
+                                        "name":  "version",
+                                        "type":  "string"
+                                    },
+                                    {
+                                        "internalType":  "string",
+                                        "name":  "name",
+                                        "type":  "string"
+                                    }
+                                ],
+                    "stateMutability":  "view",
+                    "type":  "function"
+                }
+            ],
+    "deployedAt":  "2026-11-12T12:40:17.3919718+05:30",
+    "address":  "0x7894DE31F832f05B4dB5F1735d648b29e061801C"
+}

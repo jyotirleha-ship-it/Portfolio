@@ -1,0 +1,29 @@
+{
+  "name": "the-digital-universe-jyotir-leha",
+  "version": "1.0.0",
+  "description": "Futuristic Blockchain-Powered Full-Stack Developer Portfolio for Jyotir Leha R",
+  "scripts": {
+    "start": "npm run dev",
+    "dev:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed:portfolio && npm run seed:admin",
+    "compile:contract": "cd blockchain && npx hardhat compile",
+    "test:contract": "cd blockchain && npx hardhat test",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "portfolio",
+    "blockchain",
+    "web3",
+    "ethereum",
+    "sepolia",
+    "solidity",
+    "react",
+    "vite",
+    "express",
+    "mongodb",
+    "gemini"
+  ],
+  "author": "Jyotir Leha R",
+  "license": "MIT"
+}

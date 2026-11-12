@@ -1,0 +1,26 @@
+{
+  "name": "digital-universe-backend",
+  "version": "1.0.0",
+  "description": "Full-Stack Backend API for Jyotir Leha's Digital Universe Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "seed:portfolio": "node scripts/seedPortfolio.js",
+    "seed:all": "node scripts/seedPortfolio.js && node scripts/seedAdmin.js"
+  },
+  "dependencies": {
+    "@google/genai": "^3.2.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0"
+  }
+}

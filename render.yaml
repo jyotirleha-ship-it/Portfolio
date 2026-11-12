@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: digital-universe-backend
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CLIENT_URL
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SEPOLIA_RPC_URL
+        value: https://rpc.sepolia.org
+      - key: SEPOLIA_PRIVATE_KEY
+        sync: false
